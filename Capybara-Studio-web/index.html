@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
     <title>Capybara Studio</title>
 </head>
 
-<body class="col">
+<body class="container-fluid">
     <header>
+        <!--navtab
         <nav>
             <div class="logo">
-                <img src="logo.webp" alt="Capybara Studio Logo">
+                <img src="pictures/LogoNav.svg" alt="Capybara Studio Logo" width="300" >
             </div>
             <div class="nav-links">
                 <a href="#inicio">Inicio</a>
@@ -22,6 +24,34 @@
                 <a href="#contacto">Contacto</a>
             </div>
         </nav>
+        -->
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="pictures/LogoNav.svg" alt="Capybara Studios" width="300"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Proyectos hechos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">¿Qué puedo hacer?</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        "Vení y sumate a la aventura"
+      </span>
+    </div>
+  </div>
+</nav>
     </header>
 
     <main id="inicio" class="col-md-">
@@ -31,32 +61,75 @@
     </main>
 
     <section id="proyectos">
-        <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="pictures/SegaShare/Mesa de trabajo 1Logo 1.png" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sega Share</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div class="col">
+    <div class="card h-100">
+      <model-viewer camera-controls touch-action="pan-y" autoplay animation-name="time.idleAction" ar ar-modes="webxr scene-viewer" scale="0.2 0.2 0.2" shadow-intensity="1" src="pictures/Sonic_low_poly.glb" class="card-img-top"
+      ></model-viewer>
+      <div class="card-body">
+        <h5 class="card-title">Modelos 3D Low Poly</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+<iframe src="https://editor.p5js.org/German11/full/tH6ELxN6I" class="card-img-top"></iframe>
+      <div class="card-body">
+        <h5 class="card-title">Modelos 3D Low Poly</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+        <video src="pictures/Carmesí - Behance.mp4" controls></video>
+      <div class="card-body">
+        <h5 class="card-title">Lyric video</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <video src="pictures/bella_durmiente/La bella durmiente y la ciudad de bronce.mp4" controls></video>
+      <div class="card-body">
+        <h5 class="card-title">Animación 2D</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <video src="pictures/Titulos_iniciales/Titulos_iniciales.mp4" controls alt="..."></video>
+    <div class="card-body">
+        <h5 class="card-title">Títulos iniciales</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+      <div class="col">
+    <div class="card h-100">
+      <video src="pictures/golpe_de_realidad.mp4" controls alt="..."></video>
+    <div class="card-body">
+        <h5 class="card-title">Golpe de realidad</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
+</div>
+
     </section>
 
 
@@ -66,26 +139,195 @@
         <p>Los servicios que ofrezco son variados:
 
         </p>
-        <ul>
-            <li>Diseño gráfico</li>
-            <li>Branding</li>
-            <li>Ilustración</li>
-            <li>Animación y motion graphics</li>
-            <li>Edición de video</li>
-            <li>Edición de audio</li>
-            <li>Modelado 3D</li>
-            <li>Diseño web</li>
-            <li>Visuales interactivas</li>
-            <li>Desarrollo de aplicaciones</li>
-            <li>Uso de Arduino para proyectos interactivos</li>
-        </ul>
-    </section>
 
-        
-    </section>
+        <!-- Acordion de toda la parte de habilidades-->
+<div class="row g-4 align-items-start">
+  <div class="col-lg-4">
+<div class="accordion" id="accordionExample">
+
+  <!-- a partir de acá cada separación es un acordion diferente-->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" data-image="pictures/Carpincho logo.png" data-alt="logo de Capybara Studio" aria-expanded="true" aria-controls="collapseOne">
+        Diseño gráfico
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+        Realizo logotipos, flyers, carteles, entre otras par anegocios ya establecidos o para nuevos emprendimientos.
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" data-image="pictures/favicon.png" data-alt="branding" aria-expanded="false" aria-controls="collapseTwo">
+        Branding
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          ¿Querés que tu marca tenga una identidad visual única y coherente? Puedo ayudarte a crear un branding completo que refleje la esencia de tu negocio y conecte con tu tu público objetivo.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" data-image="pictures/favicon.png" data-alt="ilustración" aria-expanded="false" aria-controls="collapseThree">
+        Ilustración
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Puedo crear ilustraciones personalizadas para libros, revistas, cómics, portadas de álbumes, entre otros. Mi estilo es versátil y puedo adaptarme a diferentes géneros y temáticas.
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" data-image="pictures/SegaShare/Mesa de trabajo 1Logo v1.png" data-alt="animación y motion graphics" aria-expanded="false" aria-controls="collapseFour">
+        Animación y motion graphics
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Puedo realizar animaciones 2D que reflejen la personalidad de tu marca y/o proyecto. Tambien motion graphics para videos explicativos, presentaciones, publicidad y más.
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" data-image="pictures/SegaShare/Mesa de trabajo 1Logo 1.png" data-alt="edición de video" aria-expanded="false" aria-controls="collapseFive">
+        Edición de video
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Hago edición general para videos, para redes sociales, presentaciones, videos largos, cortos, entre otros, te ayudo a que tu contenido sea más atractivo y profesional.
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" data-image="pictures/SegaShare/Mesa de trabajo 1Logo 2.png" data-alt="edición de audio" aria-expanded="false" aria-controls="collapseSix">
+        Edición de audio
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Realizo edición de audio para que tus proyectos tengan un sonido claro, límpio y de calidad. Puedo limpiar ruidos, ajustar niveles, agregar efectos y más.
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" data-image="pictures/favicon.png" data-alt="modelado 3D" aria-expanded="false" aria-controls="collapseSeven">
+        Modelado 3D
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Creo modelos 3D para videojuegos, animaciones simples, esculturas digitales, modelos low poly, estilizados, entre otras.
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" data-image="pictures/favicon.png" data-alt="diseño web" aria-expanded="false" aria-controls="collapseEight">
+        Diseño web
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Diseño webs, landing pages, tiendas online, portfolios, o la idea que quieras plantear. Te ayudo a crear una web interactiva y entretenida para el usuario que te querés dirigir.
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" data-image="pictures/favicon.png" data-alt="visuales interactivas" aria-expanded="false" aria-controls="collapseNine">
+        Visuales interactivas
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Puedo realizar visuales interactivas para instalaciones, eventos o presentaciones. La tecnología que utilizo es p5.js con lenguaje de programación JavaScript, lo que me permite crear experiencias interactivas y personalizadas para el usuario.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" data-image="pictures/favicon.png" data-alt="Arduino" aria-expanded="false" aria-controls="collapseTen">
+        Uso de Arduino para proyectos interactivos
+      </button>
+    </h2>
+    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div>
+          Puedo utilizar Arduino o Esp32 para crear proyectos interactivos utilizando sensores, luces, cámaras, entre otros componentes eléctronicos.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="col-lg-8">
+    <div id="serviceImageContainer" class="text-center">
+      <img id="serviceImage" src="pictures/Carpincho logo.png"  height="600" alt="logo de Capybara Studio">
+    </div>
+  </div>
+</div>
+
+<!-- Pequeño script para que cada acordion apretado me muestre una imagen según el botón-->
+<script>
+  const accordion = document.getElementById('accordionExample');
+  const imageContainer = document.getElementById('serviceImageContainer');
+  const image = document.getElementById('serviceImage');
+
+  imageContainer.hidden = !accordion.querySelector('.accordion-collapse.show');
+
+  accordion.addEventListener('shown.bs.collapse', (event) => {
+    const button = document.querySelector(`[data-bs-target="#${event.target.id}"]`);
+    image.src = button.dataset.image;
+    image.alt = button.dataset.alt;
+    imageContainer.hidden = false;
+  });
+
+  accordion.addEventListener('hidden.bs.collapse', () => {
+    imageContainer.hidden = !accordion.querySelector('.accordion-collapse.show');
+  });
+</script>
+    
 
     <footer id="contacto">
-        <img src="logo.webp" alt="Capybara Studio Logo">
+        <img src="pictures/favicon.png" height="100" alt="Capybara Studio Logo">
         <p>&copy; 2026 Capybara Studio. Todos los derechos reservados.</p>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>

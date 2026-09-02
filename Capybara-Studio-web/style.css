@@ -1,0 +1,15 @@
+.card-img-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #202020;
+}
+
+model-viewer.card-img-top {
+    display: block;
+    object-fit: contain;
+}
+
+li{
+    list-style: none;
+}
