@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
 <link rel="icon" href="pictures/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Capybara Studio</title>
 </head>
 
-<body class="container-fluid">
+<body data-bs-spy="scroll" data-bs-target="#navbarText" data-bs-offset="120" tabindex="0">
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="pictures/Imagotipo.png" alt="Capybara Studios" width="300"></a>
+    <a class="navbar-brand col-4" href="#" ><img src="pictures/Imagotipo.png" alt="Capybara Studios" width="300"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse col-4" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Proyectos hechos</a>
+          <a class="nav-link" href="#proyectos">Proyectos hechos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">¿Qué puedo hacer?</a>
+          <a class="nav-link" href="#habilidades">¿Qué puedo hacer?</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        "Vení y sumate a la aventura"
+      <span class="navbar-text col-4">
+        <h5>"Vení y sumate a la aventura"</h5>
       </span>
     </div>
   </div>
 </nav>
     </header>
-
+    <div class="container-fluid">
     <main id="inicio" class="col-md-">
         <h1>Bienvenido a Capybara Studio</h1>
         <p>Capybara Studio es un espacio personal el cual es un proyecto individual con la idea de ir creciendo poco a poco a través de trabajos con sentido, personalidad y una visión propia. Si necesitás algo, estoy para ayudarte a crear tu proyecto.
@@ -80,7 +81,7 @@
         <!--Título de las cartas-->
         <h5 class="card-title">Reproductor de música - p5.js</h5>
         <!--texto debajo del título de las cartas-->
-        <p class="card-text">Esto es un visualizador de música 3D el cual la esfera, u otra forma apretando las teclas D o S, tomando inspiración clara de los visualizadores de música 2D tradicionales.</p>
+        <p class="card-text">Esto es un visualizador de música 3D el cual la esfera, u otra forma apretando las teclas D o S, tomando inspiración clara de los visualizadores de música 2D tradicionales. Podés mirarlo en pantalla completa <a href="https://editor.p5js.org/German11/full/tH6ELxN6I" target="_blank">acá</a></p>
       </div>
     </div>
   </div>
@@ -131,7 +132,7 @@
 
 
     <!-- Agregar visuales a esta sección del lado derecho que aparezcan según el contenido -->
-    <section id="habilidades">
+    <section id="habilidades" class="container-fluid">
         <h2>¿Qué puedo hacer?</h2>
         <p>Los servicios que ofrezco son variados:
 
@@ -145,7 +146,7 @@
   <!-- a partir de acá cada separación es un acordion diferente-->
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" data-image="pictures/recursos/diseño_grafico.png" data-alt="logo de Capybara Studio" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" data-image="pictures/recursos/diseño_grafico.jpg" data-alt="logo de Capybara Studio" aria-expanded="true" aria-controls="collapseOne">
         Diseño gráfico
       </button>
     </h2>
@@ -175,7 +176,7 @@
 
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" data-image="pictures/recursos/ilustracion.png" data-alt="ilustración" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" data-image="pictures/recursos/ilustracion.jpg" data-alt="ilustración" aria-expanded="false" aria-controls="collapseThree">
         Ilustración
       </button>
     </h2>
@@ -191,7 +192,7 @@
 
         <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" data-image="pictures/recursos/animacion.png" data-alt="animación y motion graphics" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" data-image="pictures/recursos/animacion.jpg" data-alt="animación y motion graphics" aria-expanded="false" aria-controls="collapseFour">
         Animación y motion graphics
       </button>
     </h2>
@@ -206,7 +207,7 @@
 
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" data-image="pictures/recursos/edicion_video.png" data-alt="edición de video" aria-expanded="false" aria-controls="collapseFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" data-image="pictures/recursos/edicion_video.jpg" data-alt="edición de video" aria-expanded="false" aria-controls="collapseFive">
         Edición de video
       </button>
     </h2>
@@ -221,7 +222,7 @@
 
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" data-image="pictures/SegaShare/Mesa de trabajo 1Logo 2.png" data-alt="edición de audio" aria-expanded="false" aria-controls="collapseSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" data-image="pictures/recursos/edicion_sonido.jpg" data-alt="edición de audio" aria-expanded="false" aria-controls="collapseSix">
         Edición de audio
       </button>
     </h2>
@@ -236,7 +237,7 @@
 
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" data-image="pictures/recursos/3d.png" data-alt="modelado 3D" aria-expanded="false" aria-controls="collapseSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" data-image="pictures/recursos/3d.jpg" data-alt="modelado 3D" aria-expanded="false" aria-controls="collapseSeven">
         Modelado 3D
       </button>
     </h2>
@@ -251,7 +252,7 @@
 
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" data-image="pictures/recursos/web.png" data-alt="diseño web" aria-expanded="false" aria-controls="collapseEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" data-image="pictures/recursos/web.jpg" data-alt="diseño web" aria-expanded="false" aria-controls="collapseEight">
         Diseño web
       </button>
     </h2>
@@ -266,7 +267,7 @@
 
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" data-image="pictures/recursos/interactivo.png" data-alt="visuales interactivas" aria-expanded="false" aria-controls="collapseNine">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" data-image="pictures/recursos/interactivo.jpg" data-alt="visuales interactivas" aria-expanded="false" aria-controls="collapseNine">
         Visuales interactivas
       </button>
     </h2>
@@ -281,7 +282,7 @@
   
       <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" data-image="pictures/recursos/multimedial.png" data-alt="Sistemas multimediales" aria-expanded="false" aria-controls="collapseTen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" data-image="pictures/recursos/multimedial.jpg" data-alt="Sistemas multimediales" aria-expanded="false" aria-controls="collapseTen">
         Sistemas multimediales
       </button>
     </h2>
@@ -298,35 +299,56 @@
   <div class="col-lg-8">
     <div id="serviceImageContainer" class="text-center">
       <!--Si se cambia la imagen del primer acordedón, cambiar tmabién esta por la misma imagen.-->
-      <img id="serviceImage" src="pictures/recursos/diseño_grafico.png"  height="600" alt="logo de Capybara Studio">
+      <img id="serviceImage" src="pictures/recursos/diseño_grafico.jpg"  height="600" alt="logo de Capybara Studio">
     </div>
   </div>
 </div>
+    </section>
 
 <!-- Pequeño script para que cada acordion apretado me muestre una imagen según el botón-->
 <script>
   const accordion = document.getElementById('accordionExample');
   const imageContainer = document.getElementById('serviceImageContainer');
   const image = document.getElementById('serviceImage');
+  const imageColumn = imageContainer.parentElement;
+  const mobileLayout = window.matchMedia('(max-width: 1000px)');
 
-  imageContainer.hidden = !accordion.querySelector('.accordion-collapse.show');
+  function positionImage(openPanel) {
+    imageContainer.hidden = !openPanel;
+
+    if (mobileLayout.matches && openPanel) {
+      openPanel.insertAdjacentElement('afterend', imageContainer);
+    } else if (!mobileLayout.matches) {
+      imageColumn.append(imageContainer);
+    }
+  }
+
+  positionImage(accordion.querySelector('.accordion-collapse.show'));
 
   accordion.addEventListener('shown.bs.collapse', (event) => {
     const button = document.querySelector(`[data-bs-target="#${event.target.id}"]`);
     image.src = button.dataset.image;
     image.alt = button.dataset.alt;
-    imageContainer.hidden = false;
+    positionImage(event.target);
   });
 
   accordion.addEventListener('hidden.bs.collapse', () => {
-    imageContainer.hidden = !accordion.querySelector('.accordion-collapse.show');
+    positionImage(accordion.querySelector('.accordion-collapse.show'));
+  });
+
+  mobileLayout.addEventListener('change', () => {
+    positionImage(accordion.querySelector('.accordion-collapse.show'));
   });
 </script>
-    
+  
 
-    <footer id="contacto">
-        <img src="pictures/favicon.png" height="100" alt="Capybara Studio Logo">
+    <footer id="contacto" >
+      <div class="container-fluid">
+
+        <img src="pictures/Capybara_studios.png" height="100" alt="Capybara Studio Logo">
         <p>&copy; 2026 Capybara Studio. Todos los derechos reservados.</p>
+     
+    
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -335,7 +357,7 @@
             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-
+      </div>
     </footer>
 </body>
 
