@@ -1,35 +1,77 @@
-p{
-    font-size: auto;
+
+
+body{
+    font-family: 'Poppins';
 }
+
+
 
 
 .container-fluid {
-    background-color: #e0effa;
+    padding-top: 0 !important;
+    background-color: #ffffff;
     color: #1a1a1a;
 }
 
+
 nav .container-fluid {
-    background-color: #f6f9fc ;
+    padding-top: 0.5rem !important;
+    background-color: #4fd9fc ;
 }
 
 .nav-item{
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: #f6f9fc;
+    color:aliceblue !important;
+    background-color: #4fd9fc;
 }
 
-.navbar-nav .nav-link {
-    transition: background-color 0.3s ease-in-out;
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.navbar-nav .nav-link.active {
-    background-color: rgb(179, 221, 250);
+.nav-link:hover{
+    background-color: #fcc617;
+    transition-duration: 0.5s ease-in-out;
 }
+
+h4,h5{
+    font-family: 'Contrail One', sans-serif;
+    font-weight: 200;
+}
+
 
 #inicio{
     padding-top: 11cap;
     padding-bottom: 3cap;
+    font-size: 16px;
+}
+
+
+h1{
+    font-family: 'Contrail One';
+    text-align: center;
+}
+
+.cartaInicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.presentacion{
+    padding: 2rem;
+}
+
+
+
+.body{
+    background-color: #f6f9fc;
+    padding: 3rem;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
 }
 
 .card-img-top {
@@ -40,7 +82,7 @@ nav .container-fluid {
 }
 
 .card-body {
-    background-color: #fdfdfd;
+    background-color: #f6f9fc;
     box-shadow: none;
 
 }
@@ -48,6 +90,8 @@ nav .container-fluid {
 .card {
     border: none;
 }
+
+
 
 iframe{
     height: 40cap !important;
@@ -73,7 +117,7 @@ li{
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: rgb(160, 204, 241);
+    background-color: #4fd9fc;
 }
 
 .accordion-body{
