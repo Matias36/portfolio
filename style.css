@@ -9,7 +9,7 @@ body{
 }
 
 .fondo{
-        background: url("pictures/recursos/patrones.webp") repeat;
+        background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("pictures/recursos/patrones.webp") repeat;
 }
 
 .container-fluid {
@@ -70,9 +70,6 @@ h1{
     text-align: center;
     margin-bottom: 2rem;
     color: #000000;
-    padding: 2rem;
-    background-color: #adefff;
-    background: linear-gradient(#ffffff81, rgba(255, 255, 255, 0.507)) ;
 
 }
 
