@@ -1,11 +1,16 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Poppins';
+    margin: 0;
+    color: #1a1a1a;
 }
 
-
-
+.fondo{
+        background: url("pictures/recursos/patrones.webp") repeat;
+}
 
 .container-fluid {
     padding-top: 0 !important;
@@ -14,9 +19,14 @@ body{
 }
 
 
+nav{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 nav .container-fluid {
     padding-top: 0.5rem !important;
-    background-color: #4fd9fc ;
+    background-color: #adefff ;
 }
 
 .nav-item{
@@ -24,54 +34,70 @@ nav .container-fluid {
     align-items: center;
     text-align: center;
     color:aliceblue !important;
-    background-color: #4fd9fc;
+    background-color: none;
+}
+.navbar-nav {
+    gap: 0;
 }
 
-.navbar{
-    padding-top: 0;
-    padding-bottom: 0;
+.nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    color: #123a4a !important;
+    font-weight: 600;
 }
 
 .nav-link:hover{
     background-color: #fcc617;
+    padding: 0.5rem 1rem;
     transition-duration: 0.5s ease-in-out;
 }
 
 h4,h5{
     font-family: 'Contrail One', sans-serif;
     font-weight: 200;
+    color:#1a1a1a;
 }
-
 
 #inicio{
-    padding-top: 11cap;
-    padding-bottom: 3cap;
+    padding-top: 11rem;
+    padding-bottom: 3rem;
     font-size: 16px;
 }
-
 
 h1{
     font-family: 'Contrail One';
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .cartaInicio{
     display: flex;
     justify-content: center;
     text-align: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    
 }
 
 .presentacion{
     padding: 2rem;
+    flex: 1 1 320px;
+    max-width: 520px;
+
 }
 
-
+.presentacion:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
 
 .body{
-    background-color: #f6f9fc;
+    background-color: #adefff;
     padding: 3rem;
     border-radius: 10px;
     font-family: 'poppins', sans-serif;
+        border: 2px solid #4fd9fc;
 }
 
 .card-img-top {
@@ -91,25 +117,26 @@ h1{
     border: none;
 }
 
-
-
-iframe{
-    height: 40cap !important;
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
 }
 
-
+iframe{
+    display: block;
+    height: 40cap ;
+    object-fit: contain;
+}
 
 model-viewer.card-img-top {
     display: block;
     object-fit: contain;
+
 }
 
 li{
     list-style: none;
 }
-
-
-
 
 .accordion-button {
     background-color:  rgb(252, 250, 250);
@@ -117,7 +144,10 @@ li{
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #4fd9fc;
+    background-color: #adefff;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+    transition: font-weight 0.3s ease-in;
 }
 
 .accordion-body{
@@ -131,7 +161,7 @@ li{
 }
 
 #contacto {
-    background-color: #f6f9fc;
+    background-color: #e2e2e2;
     color: #1a1a1a;
     padding: 20px 0;
     border-top: 1px solid #ffffff;
@@ -144,7 +174,7 @@ footer .container-fluid {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #f6f9fc;
+    background-color: #e2e2e2;
     color: #1a1a1a;
 }
 
@@ -176,6 +206,14 @@ ul {
     padding: 0 !important;
 }
 
+i{
+    padding: 10px;
+    color:#4fd9fc;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .logoFooter{
     display: flex;
     align-items: center;
@@ -205,5 +243,60 @@ ul {
         max-height: 360px;
         object-fit: contain;
     }
+
+    .col-4 h4{
+        text-align: center;
+    }
+
+    model-viewer.card-img-top {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    
+    .cartaInicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 220px;
+    }
+
+    iframe{
+        
+        height: 40rem !important;
+    }
+
+    .col-12 li{
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .col-12.pie {
+        flex-direction: row;
+        align-items: center !important;
+        gap: 1rem;
+    }
+
+    .pie p {
+        margin-bottom: 0;
+    }
+
+    .pie p a {
+        font-size: 0;
+    }
+
+    .pie p a i {
+        font-size: 2rem;
+        padding: 30px;
+        align-items: center;
+    }
 }
+
 
