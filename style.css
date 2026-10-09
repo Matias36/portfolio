@@ -69,6 +69,11 @@ h1{
     font-family: 'Contrail One';
     text-align: center;
     margin-bottom: 2rem;
+    color: #000000;
+    padding: 2rem;
+    background-color: #adefff;
+    background: linear-gradient(#ffffff81, rgba(255, 255, 255, 0.507)) ;
+
 }
 
 .cartaInicio{
